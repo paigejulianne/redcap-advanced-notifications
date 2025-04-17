@@ -1,9 +1,8 @@
 {
   "name": "Advanced Notifications",
-  "description": "",
-
+  "description": "Advanced notifications for REDCap",
   "documentation": "README.md",
-  "namespace": "paigejulianne\\REDCap_Advanced_Notifications",
+  "namespace": "paigejulianne\\Advanced_Notifications",
   "versions": [
     {
       "0.0.1": "Development release"
@@ -19,21 +18,26 @@
   "links": {
     "project": [
       {
-        "name": "Browser Extension Configuration",
-        "key": "browser-extension-config",
-        "icon": "wrench",
-        "url": "index.php",
-        "show_header_and_footer": true
+        "name": "Advanced Notifications",
+        "key": "advanced-notifications-config",
+        "icon": "fas fa-square-envelope",
+        "url": "project_index.php"
+      }
+    ],
+    "control-center": [
+      {
+        "name": "Advanced Notifications (System-wide)",
+        "key": "advanced-notifications-system-config",
+        "icon": "fas fa-square-envelope",
+        "url": "system_index.php"
       }
     ]
   },
 
-  "no-auth-pages": [ "projects", "extraconfig", "newrec" ],
-
   "framework-version": 12,
 
   "compatibility": {
-    "php-version-min": "7.2.0",
+    "php-version-min": "7.9.0",
     "php-version-max": "",
     "redcap-version-min": "13.1.2",
     "redcap-version-max": ""
