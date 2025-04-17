@@ -1,0 +1,42 @@
+{
+  "name": "Advanced Notifications",
+  "description": "",
+
+  "documentation": "README.md",
+  "namespace": "paigejulianne\\REDCap_Advanced_Notifications",
+  "versions": [
+    {
+      "0.0.1": "Development release"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Paige Julianne Sullivan",
+      "email": "redcap@paigejulianne.com",
+      "institution": "Johns Hopkins University"
+    }
+  ],
+  "links": {
+    "project": [
+      {
+        "name": "Browser Extension Configuration",
+        "key": "browser-extension-config",
+        "icon": "wrench",
+        "url": "index.php",
+        "show_header_and_footer": true
+      }
+    ]
+  },
+
+  "no-auth-pages": [ "projects", "extraconfig", "newrec" ],
+
+  "framework-version": 12,
+
+  "compatibility": {
+    "php-version-min": "7.2.0",
+    "php-version-max": "",
+    "redcap-version-min": "13.1.2",
+    "redcap-version-max": ""
+  }
+
+}

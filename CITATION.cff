@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: REDCap Advanced Notifications
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Paige
+    family-names: Sullivan
+    email: redcap@paigejulianne.com
+    orcid: 'https://orcid.org/0009-0002-7041-9547'
+repository-code: 'https://github.com/paigejulianne/redcap-advanced-notifications'
+abstract: >-
+  TBD
+keywords:
+  - redcap
+  - redcap-external-module
+  - redcap-repo
+license: MIT
