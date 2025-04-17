@@ -1,4 +1,5 @@
 <?php
+global $module;
 require_once APP_PATH_DOCROOT . 'ControlCenter/header.php';
 
 
