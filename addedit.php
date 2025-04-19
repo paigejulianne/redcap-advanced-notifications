@@ -36,13 +36,13 @@ if ($displayType == "project") {
     CC: <input type="text" name="cc" id="cc" value="" size="40" maxlength="400"/><br/><br/>
     BCC: <input type="text" name="bcc" id="bcc" value="" size="40" maxlength="400"/><br/><br/>
     Subject: <input type="text" name="subject" id="subject" value="" size="40" maxlength="400"/><br/><br/>
-    <textarea name="body" id="body" cols="80" rows="5"></textarea><br/><br/>
+    Body:<br/><textarea name="body" id="body" cols="80" rows="5"></textarea><br/><br/>
 
 <?php if(($displayType == "project") && ($Proj->messaging_provider)):
     ?>
     <label><input type="checkbox" name="action" value="sendSMS"> Send an SMS message</label><br/>
     To: <input type="text" name="to" id="to" value="" size="40" maxlength="40"/><br/><br/>
-    Body: <textarea name="body" id="body" cols="80" rows="5"></textarea><br/><br/>
+    Body:<br/><textarea name="body" id="body" cols="80" rows="5"></textarea><br/><br/>
 <?php endif; ?>
     <label><input type="checkbox" name="action" value="lockForm"> Lock the Form</label><br/>
 <?php if($displayType == "project"): ?>
