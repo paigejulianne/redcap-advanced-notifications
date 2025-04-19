@@ -12,8 +12,6 @@ switch($displayType) {
         die('You are not allowed to access this page');
 }
 
-
-
 ?>
 <h2>Advanced Notifications</h2>
 <h3>Add / Edit Notification</h3>
@@ -30,7 +28,7 @@ if ($displayType == "project") {
 }
 ?>
     Execute the following actions when this condition is met:<br/>
-    <textarea name="condition" id="code" cols="40" rows="10"></textarea>
+    <textarea name="condition" id="code" cols="80" rows="5"></textarea>
     <br/><br/>
     <label><input type="checkbox" name="action" value="sendEmail"> Send an email</label><br/>
     <!-- from -->
@@ -39,8 +37,7 @@ if ($displayType == "project") {
     <!-- bcc -->
     <!-- subject -->
     <!-- body -->
-<?php if($displayType == "project"):
-    // need to determine if project has an SMS provider configured
+<?php if(($displayType == "project") && ($Proj->messaging_provider)):
     ?>
     <label><input type="checkbox" name="action" value="sendSMS"> Send an SMS message</label><br/>
     <!-- to -->
