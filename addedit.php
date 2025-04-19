@@ -26,9 +26,9 @@ if ($displayType == "project") {
     foreach($instruments as $name => $label) {
         printf('<option value="%s" %s>%s</option>', $name, $selected, $label);
     }
-    echo '</select>';
+    echo '</select><br/><br/>';
 }
-?><br/><br/>
+?>
     Execute the following actions when this condition is met:<br/>
     <textarea name="condition" id="code" cols="40" rows="10"></textarea>
     <br/><br/>
@@ -51,7 +51,7 @@ if ($displayType == "project") {
     <label><input type="checkbox" name="action" value="setData"> Set record data</label><br/>
     <!-- growing table with dropdown of variable names on left column, input box on right column -->
 <?php endif; ?>
-    <button class="btn" type="submit">Save</button>
+    <button class="btn btn-primary" type="submit">Save</button>
 </form>
 
 <?php

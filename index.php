@@ -26,7 +26,7 @@ switch($displayType) {
     <h2>Advanced Notifications</h2>
 <hr/>
 
-    <a class="btn" href="<?php echo $module->getUrl('addedit.php?displayType='.$displayType); ?>">Add New Notification</a>
+    <a class="btn btn-primary" href="<?php echo $module->getUrl('addedit.php?displayType='.$displayType); ?>">Add New Notification</a>
 
 
 
