@@ -52,6 +52,16 @@ if ($displayType == "project") {
     <button class="btn btn-primary" type="submit">Save</button>
 </form>
 
+<?php if ($displayType == "project"): ?>
+<script type="text/javascript">
+    <?php
+    $instruments = REDCap::getInstrumentNames();
+
+    ?>
+
+</script>
+
+
 <?php
 switch($displayType) {
     case 'project':
