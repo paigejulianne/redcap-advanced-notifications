@@ -53,13 +53,18 @@ if ($displayType == "project") {
 </form>
 
 <?php if ($displayType == "project"): ?>
-<script type="text/javascript">
+<!-- <script type="text/javascript"> -->
     <?php
     $instruments = REDCap::getInstrumentNames();
+    foreach($instruments as $name => $label) {
+        $fieldNames = $module->getFieldNames($name);
+        echo $label;
+        var_export($fieldNames);
+    }
 
     ?>
 
-</script>
+<!-- </script> -->
 <?php endif; ?>
 
 
