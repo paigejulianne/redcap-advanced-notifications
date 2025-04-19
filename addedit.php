@@ -60,6 +60,7 @@ if ($displayType == "project") {
     ?>
 
 </script>
+<?php endif; ?>
 
 
 <?php
